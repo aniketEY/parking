@@ -1,0 +1,39 @@
+<div class="container mt-3">
+    <!-- Floor Selection Buttons -->
+    <div class="d-flex justify-content-center mb-4">
+        @for (item of parkingLotList; track $index) {
+
+            <button class="btn btn-primary mx-2">{{item.parkingLotName}}</button>
+        }
+      <button class="btn btn-primary mx-2">+ New</button>
+    </div>
+  
+    <!-- Parking Slots -->
+    <div class="d-flex flex-wrap justify-content-center">
+      <!-- Parking Slot 1 - Occupied -->
+      <div class="parking-slot occupied">
+        <i class="fas fa-car"></i>
+        <p class="parking-number">1</p>
+        <p class="car-number">MH-34-1122</p>
+      </div>
+  
+      <!-- Parking Slot 2 - Available -->
+      <div class="parking-slot available">
+        <p class="parking-number">2</p>
+      </div>
+  
+      <!-- Parking Slot 3 - Occupied -->
+      <div class="parking-slot occupied">
+        <i class="fas fa-car"></i>
+        <p class="parking-number">3</p>
+      </div>
+  
+      <!-- Parking Slot 4 - Available -->
+      <div class="parking-slot available">
+        <p class="parking-number">4</p>
+      </div>
+  
+      <!-- Add more parking slots similarly -->
+    </div>
+  </div>
+  

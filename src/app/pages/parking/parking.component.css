@@ -1,0 +1,53 @@
+/* Parking slot layout */
+.parking-slot {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    font-size: 1.2rem;
+  }
+  
+  .occupied {
+    background-color: lightgreen;
+    color: blue;
+    position: relative;
+  }
+  
+  .available {
+    background-color: lightgray;
+    color: #333;
+  }
+  
+  .parking-number {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 5px 0 0;
+  }
+  
+  .car-number {
+    font-size: 0.8rem;
+    margin-top: -5px;
+  }
+  
+  /* Floor button styling */
+  .btn-primary {
+    border-radius: 20px;
+  }
+  
+  .btn-primary + .btn-primary {
+    margin-left: 10px;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 576px) {
+    .parking-slot {
+      width: 80px;
+      height: 80px;
+      font-size: 1rem;
+    }
+  }
+  

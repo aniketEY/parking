@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global styles */
+
+/* Change the Parking App brand color to white */
+.navbar-brand {
+  color: white !important;
+}
+
+/* Default state for nav links */
+.nav-link {
+  color: #f8f9fa;
+  padding: 10px 15px;
+}
+
+/* Keep active and visited nav links white */
+.nav-link.active, .nav-link:visited {
+  color: white !important;
+}
+
+/* Change hover effect */
+/* .nav-link:hover {
+  background-color: #f8f9fa;
+  color: #333;
+} */
